@@ -1,0 +1,53 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.16.13 clang-1200.0.22.25)
+// swift-module-flags: -target armv7-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Mailfire
+import AdSupport
+import CommonCrypto
+import CoreTelephony
+import Foundation
+@_exported import Mailfire
+import StoreKit
+import Swift
+import SystemConfiguration
+import UIKit
+import UserNotifications.UNUserNotificationCenter
+import UserNotifications
+public enum PushToken {
+  case apns(token: Swift.String)
+  case firebase(token: Swift.String)
+  case custom(token: Swift.String, serviceDesc: Swift.Dictionary<Swift.String, Swift.String>)
+}
+public enum NotificationDisplayType {
+  case none
+  case `default`
+  public static func == (a: Mailfire.NotificationDisplayType, b: Mailfire.NotificationDisplayType) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+@objc @_inheritsConvenienceInitializers final public class Mailfire : ObjectiveC.NSObject {
+  @objc public static func initializeWithLaunchOptions(_ launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?, appId: Swift.String, clientId: Swift.String, appCode: Swift.String, appVersion: Swift.String? = nil)
+  @objc public static func promptForPushNotifications(options: UserNotifications.UNAuthorizationOptions = [.alert, .sound, .badge], userResponce: @escaping (Swift.Bool) -> () = { _ in })
+  public static func pushToken(_ token: Mailfire.PushToken?)
+  public static func logEvent(_ name: Swift.String, value: Swift.String)
+  public static func logPush(pushPayload: [Swift.AnyHashable : Any])
+  public static func logUnseenPush(pushPayload: [Swift.AnyHashable : Any])
+  public static func logUser(email: Swift.String, id: Swift.String? = nil)
+  public static var inFocusDisplayType: Mailfire.NotificationDisplayType {
+    get
+    set
+  }
+  public static var subscription: Swift.Bool {
+    get
+    set
+  }
+  @objc deinit
+  @objc override dynamic public init()
+}
+extension Mailfire {
+  public static func didReceiveNotificationExtensionRequest(_ request: UserNotifications.UNNotificationRequest, with content: UserNotifications.UNMutableNotificationContent)
+  public static func serviceExtensionTimeWillExpire(_ request: UserNotifications.UNNotificationRequest, with content: UserNotifications.UNMutableNotificationContent)
+}
+extension Mailfire.NotificationDisplayType : Swift.Equatable {}
+extension Mailfire.NotificationDisplayType : Swift.Hashable {}
