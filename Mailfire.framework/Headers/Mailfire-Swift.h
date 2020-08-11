@@ -215,7 +215,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 /// Use the Mailfire SDK to design and send push notifications,
 /// track and report events occurred in your application.
 /// Developers using the Mailfire SDK with their app are required to register for
-/// a credential, and to specify these credentials (appId, clientId, appCode) in their application.
+/// a credential, and to specify these credentials (appId, clientId, clientToken) in their application.
 /// Failure to do so results in blocked access to certain features and degradation
 /// in the quality of other services.
 /// To obtain these credentials, visit the developer portal at https://api.mailfire.io/dev
@@ -224,13 +224,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 /// Credentials are unique to your application’s bundle identifier.
 /// Do not reuse credentials across multiple applications.
 /// Adding Credentials
-/// Ensure that you have provided the appId, clientId, appCode before using the Mailfire SDK.
+/// Ensure that you have provided the appId, clientId, clientToken before using the Mailfire SDK.
 /// For example, set them in your app delegate:
 /// \code
 /// func application(_ application: UIApplication,
 /// didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 ///    // Replace 'YOUR_APP_ID' with your Mailfire App ID.
-///    Mailfire.initializeWithLaunchOptions(launchOptions, appId: 'YOUR_APP_ID', clientId: 'YOUR_CLIENT_ID',  appCode: 'YOUR_APP_CODE')
+///    Mailfire.initializeWithLaunchOptions(launchOptions, appId: 'YOUR_APP_ID', clientId: 'YOUR_CLIENT_ID',  clientToken: 'YOUR_APP_CODE')
 /// }
 ///
 /// \endcode
@@ -243,11 +243,11 @@ SWIFT_CLASS("_TtC8Mailfire8Mailfire")
 ///
 /// \param clientId Mailfire SDK Client Id obtained from developer portal at https://api.mailfire.io
 ///
-/// \param appKey Mailfire SDK App Key obtained from developer portal at https://api.mailfire.io
+/// \param clientToken Mailfire SDK App Key obtained from developer portal at https://api.mailfire.io
 ///
 /// \param appVersion Application version
 ///
-+ (void)initializeWithLaunchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions appId:(NSString * _Nonnull)appId clientId:(NSString * _Nonnull)clientId appCode:(NSString * _Nonnull)appCode appVersion:(NSString * _Nullable)appVersion;
++ (void)initializeWithLaunchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions appId:(NSString * _Nonnull)appId clientId:(NSString * _Nonnull)clientId clientToken:(NSString * _Nonnull)clientToken appVersion:(NSString * _Nullable)appVersion;
 /// Prompt Users to Enable Notifications
 /// warning:
 /// Assigning UNUserNotificationCenterDelegate delegate after these methods are called, otherwise might cause you to miss incoming notifications. The delegate will be proxied object, it won’t be the same as has been assigned.
@@ -490,7 +490,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 /// Use the Mailfire SDK to design and send push notifications,
 /// track and report events occurred in your application.
 /// Developers using the Mailfire SDK with their app are required to register for
-/// a credential, and to specify these credentials (appId, clientId, appCode) in their application.
+/// a credential, and to specify these credentials (appId, clientId, clientToken) in their application.
 /// Failure to do so results in blocked access to certain features and degradation
 /// in the quality of other services.
 /// To obtain these credentials, visit the developer portal at https://api.mailfire.io/dev
@@ -499,13 +499,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 /// Credentials are unique to your application’s bundle identifier.
 /// Do not reuse credentials across multiple applications.
 /// Adding Credentials
-/// Ensure that you have provided the appId, clientId, appCode before using the Mailfire SDK.
+/// Ensure that you have provided the appId, clientId, clientToken before using the Mailfire SDK.
 /// For example, set them in your app delegate:
 /// \code
 /// func application(_ application: UIApplication,
 /// didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 ///    // Replace 'YOUR_APP_ID' with your Mailfire App ID.
-///    Mailfire.initializeWithLaunchOptions(launchOptions, appId: 'YOUR_APP_ID', clientId: 'YOUR_CLIENT_ID',  appCode: 'YOUR_APP_CODE')
+///    Mailfire.initializeWithLaunchOptions(launchOptions, appId: 'YOUR_APP_ID', clientId: 'YOUR_CLIENT_ID',  clientToken: 'YOUR_APP_CODE')
 /// }
 ///
 /// \endcode
@@ -518,11 +518,11 @@ SWIFT_CLASS("_TtC8Mailfire8Mailfire")
 ///
 /// \param clientId Mailfire SDK Client Id obtained from developer portal at https://api.mailfire.io
 ///
-/// \param appKey Mailfire SDK App Key obtained from developer portal at https://api.mailfire.io
+/// \param clientToken Mailfire SDK App Key obtained from developer portal at https://api.mailfire.io
 ///
 /// \param appVersion Application version
 ///
-+ (void)initializeWithLaunchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions appId:(NSString * _Nonnull)appId clientId:(NSString * _Nonnull)clientId appCode:(NSString * _Nonnull)appCode appVersion:(NSString * _Nullable)appVersion;
++ (void)initializeWithLaunchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions appId:(NSString * _Nonnull)appId clientId:(NSString * _Nonnull)clientId clientToken:(NSString * _Nonnull)clientToken appVersion:(NSString * _Nullable)appVersion;
 /// Prompt Users to Enable Notifications
 /// warning:
 /// Assigning UNUserNotificationCenterDelegate delegate after these methods are called, otherwise might cause you to miss incoming notifications. The delegate will be proxied object, it won’t be the same as has been assigned.

@@ -17,7 +17,7 @@ import UserNotifications
  track and report events occurred in your application.
  
  Developers using the Mailfire SDK with their app are required to register for
- a credential, and to specify these credentials (appId, clientId, appCode) in their application.
+ a credential, and to specify these credentials (appId, clientId, clientToken) in their application.
  Failure to do so results in blocked access to certain features and degradation
  in the quality of other services.
  
@@ -29,14 +29,14 @@ import UserNotifications
  
  Adding Credentials
  
- Ensure that you have provided the appId, clientId, appCode before using the Mailfire SDK.
+ Ensure that you have provided the appId, clientId, clientToken before using the Mailfire SDK.
  For example, set them in your app delegate:
  
  ```
  func application(_ application: UIApplication,
  didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Replace 'YOUR_APP_ID' with your Mailfire App ID.
-    Mailfire.initializeWithLaunchOptions(launchOptions, appId: 'YOUR_APP_ID', clientId: 'YOUR_CLIENT_ID',  appCode: 'YOUR_APP_CODE')
+    Mailfire.initializeWithLaunchOptions(launchOptions, appId: 'YOUR_APP_ID', clientId: 'YOUR_CLIENT_ID',  clientToken: 'YOUR_APP_CODE')
  }
  ```
  */
@@ -49,18 +49,18 @@ public final class Mailfire : NSObject {
         - launchOptions: A dictionary indicating the reason the app was launched (if any). The contents of this dictionary may be empty in situations where the user launched the app directly.
         - appId: Mailfire SDK App Id obtained from developer portal at https://api.mailfire.io
         - clientId: Mailfire SDK Client Id obtained from developer portal at https://api.mailfire.io
-        - appKey: Mailfire SDK App Key obtained from developer portal at https://api.mailfire.io
+        - clientToken: Mailfire SDK App Key obtained from developer portal at https://api.mailfire.io
         - appVersion: Application version
      */
     @objc public static func initializeWithLaunchOptions(_ launchOptions: [UIApplication.LaunchOptionsKey: Any]?,
                                                          appId: String,
                                                          clientId : String,
-                                                         appCode: String,
+                                                         clientToken: String,
                                                          appVersion: String? = nil) {
         ApproverEngine.shared.initialize(launchOptions: launchOptions,
                                          appId: appId,
                                          clientId: clientId,
-                                         appCode: appCode,
+                                         clientToken: clientToken,
                                          appVersion: appVersion)
     }
     
@@ -134,7 +134,7 @@ public final class Mailfire : NSObject {
      Log an unseen push info payload.
      
      - Note: If there is any impl of UNUserNotificationCenterDelegate.userNotificationCenter(_:willPresent:withCompletionHandler:)
-     and a push notification won't be shown as an app in foreground then use the method insdie the callback to notify about the push notification
+     and a push notification won't be shown as an app in foreground then use the method inside the callback to notify about the push notification
      being recieved but unseen.
      
      - Parameters:
@@ -148,14 +148,14 @@ public final class Mailfire : NSObject {
      Log a user's email and unique id if any
      
      - Warning: The data is requred to help to optimize an app experience
-     by making it easy to analyze and scale product and marketing experiments
+     by making it easy to analyze and scale product and marketing experiments. If both params are nil, no requests are performed.
      
      - Parameters:
-        - email User's email
-        - id User unique identifier. Can be nil if there is no any.
+        - email User's email. Can be nil if there is no any.
+        - userId User unique identifier. Can be nil if there is no any.
     */
-    public static func logUser(email: String, id : String? = nil) {
-        ApproverEngine.shared.logUser(email: email, id: id)
+    public static func logUser(email: String? = nil, userId : String? = nil) {
+        ApproverEngine.shared.logUser(email: email, userId: userId)
     }
     
     /**
