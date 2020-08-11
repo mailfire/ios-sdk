@@ -110,19 +110,15 @@ func application(_ application: UIApplication, didRegisterForRemoteNotifications
 
 ```
 
-## Firebase Platform
+## PushToken
 
-Pass a Firebase registration token to Mailfire beckend by using
+Pass a **Firebase** registration token to Mailfire beckend by using
 ```swift
 Mailfire.shared.pushToken(.firebase(token))
 ```
 Note: Make sure that you have passed Firebase server key to Mailfire team, otherwise no pushes are going to be delivered.
 
-
-## APNS Platform
-
-Pass an APSN registration token to Mailfire beckend by using
-
+Pass an **APNS** registration token to Mailfire beckend by using
 ```swift
 Mailfire.shared.pushToken(.apns(token))
 ```
