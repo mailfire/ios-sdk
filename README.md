@@ -65,11 +65,12 @@ didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: An
 ```
 
 # Attach User
-You can do that befode or after providing PushToken.
-This event also creates a session start.
+For all methods in SDK we match user by [IDFV](https://developer.apple.com/documentation/uikit/uidevice/1620059-identifierforvendor)<br>
+Additional you can provide more product information for analytics and etc.
+- you aren't required to provide PushToken before that method
 
-- *email* - better provide after validation https://github.com/mailfire/php-sdk#check-email
-- *userId* - id on your product
+- **email** - better provide after validation https://github.com/mailfire/php-sdk#check-email
+- **userId** - id on your product
 
 ```swift
 Mailfire.logUser(email: "some@gmail.com", userId: userId)
