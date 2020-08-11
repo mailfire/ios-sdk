@@ -23,24 +23,20 @@ To obtain these credentials, visit the developer portal at https://mailfire.io a
 Credentials are unique to your application's bundle identifier. Do not reuse credentials across multiple applications.
 
 # Installation
-
-## Requirements
+Requirements
+```
 - iOS 10.0+
 - Xcode 10.2+
 - Swift 5+
+```
 
-## CocoaPods
-
-[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Mailfire into your Xcode project using CocoaPods, specify it in your `Podfile`:
-
+By dependency manager *CocoaPods* (https://cocoapods.org)
+To integrate Mailfire into your Xcode project using CocoaPods, specify it in your `Podfile`:
 ```ruby
 pod 'Mailfire'
 ```
 
-## Embedded Framework
-
-If you prefer not to use any of the aforementioned dependency managers, you can integrate Mailfire into your project manually.
-
+If you prefer integrate manually:
 - Download SDK for iOS package from this repo: Mailfire.framework folder.
 - Add the Mailfire dynamic framework to your Xcode project. Click on your app target and choose the "General" tab. Find the section called "Embedded Binaries", click the plus (+) sign, and then click the "Add Other" button. From the file dialog box select "Mailfire.framework" folder. Ensure that "Copy items if needed" and "Create folder reference" options are selected, then click Finish.
 - Ensure that Mailfire.framework appears in "Embedded Binaries" and the "Linked Frameworks and Libraries" sections.
@@ -48,11 +44,17 @@ If you prefer not to use any of the aforementioned dependency managers, you can 
 SDK for iOS is now ready for use in your Xcode project. Now that you have your project configured to work with Mailfire SDK
 
 
-## Adding Credentials
+## Credentials
+For using Mailfire platform you must provide credentials of your account and current app.
+You can find them at admin panel or request them from your account manager.
+Example:
+```
+clientId: 7345
+clientToken: uawhvnkaeuvyagbwyeuvgbayw
+appId: 837465
+```
 
-Ensure that you have provided the apiKey, appId and clientId before using the Mailfire SDK.
-For example, set them in your app delegate:
-
+Next provide this credentials at library launch:
 ```swift
 import Mailfire
 
