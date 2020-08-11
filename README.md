@@ -1,7 +1,6 @@
 # Mailfire SDK for iOS apps
 Email Marketing and Push platform for your key product metrics https://mailfire.io
 
-- [Using Mailfire](#using-mailfire)
 - [Introduction](#introduction)
 - [Installation](#installation)
 - [Adding Credentials](#adding-credentials)
@@ -51,11 +50,10 @@ clientId: 7345
 clientToken: uawhvnkaeuvyagbwyeuvgbayw
 appId: 837465 (aka projectId)
 ```
-
 Next provide this credentials at library launch:
 
-# Init
-Creates session in analytics
+# Init SDK
+Also creates session in analytics
 
 ```swift
 import Mailfire
