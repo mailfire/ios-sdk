@@ -4,14 +4,15 @@ Email Marketing and Push platform for your key product metrics https://mailfire.
 - [Introduction](#introduction)
 - [Installation](#installation)
 - [Adding Credentials](#adding-credentials)
+- [Init SDK](#init-sdk)
 - [Attach User](#attach-user)
 - [Push Notifications](#push-notifications)
   - [iOS Push Prompting](#ios-push-prompting)
-  - [Providing Push Token](#push-token)
+  - [Push Token](#push-token)
   - [Rich Push for images and delivered](#rich-push)
   - [Click tracking](#click-tracking)
   - [Unseen tracking](#unseen-tracking)
-  - [Unsubscribe](#unsubscribe)
+  - [Unsubscribe in app](#unsubscribe)
 
 # Introduction
 Use the Mailfire SDK to design and send push notifications, track and report events occurred in your application.
@@ -111,7 +112,7 @@ func application(_ application: UIApplication, didRegisterForRemoteNotifications
 
 ```
 
-## PushToken
+## Push Token
 
 Pass a **Firebase** registration token to Mailfire beckend by using
 ```swift
@@ -188,7 +189,7 @@ extension PushNotificationHelper : UNUserNotificationCenterDelegate {
 
 ```
 
-## Unseen push tracking
+## Unseen tracking
 If there is any impl of UNUserNotificationCenterDelegate.userNotificationCenter(\_:willPresent:withCompletionHandler:) and a push notification won't be shown as an app in foreground then use the method inside the callback to notify about the push notification being recieved but unseen.
 
 ```swift
@@ -204,7 +205,7 @@ extension PushNotificationService : UNUserNotificationCenterDelegate {
     }
 ```
 
-## Unsubscribe in App
+## Unsubscribe
 
 The user must first subscribe through the native prompt or app settings. It does not officially subscribe or unsubscribe them from the app settings, it unsubscribes them from receiving push from Mailfire.
 You can only call this method with false to opt out users from receiving notifications through Mailfire. You can pass true later to opt users back into notifications.
