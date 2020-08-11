@@ -51,20 +51,26 @@ Example:
 ```
 clientId: 7345
 clientToken: uawhvnkaeuvyagbwyeuvgbayw
-appId: 837465
+appId: 837465 (aka projectId)
 ```
 
 Next provide this credentials at library launch:
+
+# Init
+Creates session in analytics
+
 ```swift
 import Mailfire
 
 func application(_ application: UIApplication,
 didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-   Mailfire.initializeWithLaunchOptions(launchOptions, appId: 'YOUR_APP_ID', clientId: 'YOUR_CLIENT_ID',  appCode: 'YOUR_APP_CODE')
+   Mailfire.initializeWithLaunchOptions(launchOptions, appId: 'YOUR_APP_ID', clientId: 'YOUR_CLIENT_ID',  clientToken: 'YOUR_CLIENT_TOKEN')
 }
 ```
 
 # Log User
+befode or after PushToken
+
 The data is requred to help to optimize an app experience by making it easy to analyze and scale product and marketing experiments.<br>
 This event also creates a session start.
 
@@ -124,6 +130,7 @@ Mailfire.shared.pushToken(.apns(token))
 ```
 
 ## Rich Push
+--For delivered event
 
 The Mailfire allows your iOS application to receive rich notifications with images, and badges. It's also required for Mailfire's analytics features.
 
@@ -166,7 +173,7 @@ class NotificationService: UNNotificationServiceExtension {
 
 ```
 
-## Push tracking
+## Click tracking
 
 It's required for Mailfire's analytics features.
 Log a push info of recieved payload.
@@ -202,11 +209,11 @@ extension PushNotificationService : UNUserNotificationCenterDelegate {
     }
 ```
 
-## Unsubscribe
+## Unsubscribe in App
 
 The user must first subscribe through the native prompt or app settings. It does not officially subscribe or unsubscribe them from the app settings, it unsubscribes them from receiving push from Mailfire.
 You can only call this method with false to opt out users from receiving notifications through Mailfire. You can pass true later to opt users back into notifications.
 
 ```swift
-Mailfire.subscription = true
+Mailfire.subscription = false
 ```
