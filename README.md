@@ -5,16 +5,14 @@ Email Marketing and Push platform for your key product metrics https://mailfire.
 - [Introduction](#introduction)
 - [Installation](#installation)
 - [Adding Credentials](#adding-credentials)
+- [Attach User](#attach-user)
 - [Push Notifications](#push-notifications)
-  - [Analytics features](##analytics-features)
-  - [iOS Push Prompting](##ios-push-prompting)
-  - [Firebase Platform](##firebase-platform)
-  - [APNS Platform](##apns-platform)
-  - [Notification Service Extension](##notification-service-extension)
-  - [Push tracking](##push-tracking)
-  - [Unseen push tracking](##unseen-push-tracking)
-  - [Log user(optional)](##log-user)
-  - [Subscription](##subscription)
+  - [iOS Push Prompting](#ios-push-prompting)
+  - [Providing Push Token](#push-token)
+  - [Rich Push for images and delivered](#rich-push)
+  - [Click tracking](#click-tracking)
+  - [Unseen tracking](#unseen-tracking)
+  - [Unsubscribe](#unsubscribe)
 
 # Introduction
 Use the Mailfire SDK to design and send push notifications, track and report events occurred in your application.
@@ -68,17 +66,15 @@ didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: An
 }
 ```
 
-# Log User
-befode or after PushToken
-
-The data is requred to help to optimize an app experience by making it easy to analyze and scale product and marketing experiments.<br>
+# Attach User
+You can do that befode or after providing PushToken.
 This event also creates a session start.
 
 - *email* - better provide after validation https://github.com/mailfire/php-sdk#check-email
 - *userId* - id on your product
 
 ```swift
-Mailfire.logUser(email: "some@gmail.com", id: customID)
+Mailfire.logUser(email: "some@gmail.com", userId: userId)
 ```
 
 
