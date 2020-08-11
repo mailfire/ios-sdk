@@ -199,7 +199,7 @@ extension PushNotificationService : UNUserNotificationCenterDelegate {
                                 withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         ....
         // log push info code if push won't be shown
-        ApproverEngine.shared.logUnseenPush(pushPayload: notification.request.content.userInfo)
+        Mailfire.logUnseenPush(pushPayload: notification.request.content.userInfo)
         completionHandler([])
     }
 ```
