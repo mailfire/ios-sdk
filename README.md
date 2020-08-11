@@ -127,8 +127,8 @@ Mailfire.shared.pushToken(.apns(token))
 
 ## Rich Push
 --For delivered event
-
-The Mailfire allows your iOS application to receive rich notifications with images, and badges. It's also required for Mailfire's analytics features.
+The Mailfire allows your iOS application to receive rich notifications with images, and badges.
+It's also sends **delivered** event to analytics by didReceiveNotificationExtensionRequest.
 
 All that have to be done is introduce Notification Service Extension and invoke corresponding Mailfire methods.
 
