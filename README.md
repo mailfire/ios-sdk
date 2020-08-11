@@ -42,7 +42,7 @@ If you prefer integrate manually:
 SDK for iOS is now ready for use in your Xcode project. Now that you have your project configured to work with Mailfire SDK
 
 
-# Credentials
+# Adding Credentials
 For using Mailfire platform you must provide credentials of your account and current app.
 You can find them at admin panel or request them from your account manager.
 Example:
