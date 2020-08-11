@@ -83,8 +83,8 @@ Mailfire.logUser(email: "some@gmail.com", userId: userId)
 iOS Apps have a native prompt that users click "Allow" to subscribe to push. You can use the below methods to trigger that prompt in your app.
 
 ```
-Warning: Use that method if no other third party or native lib do not invoke method to prompt for push permissions
-If Firebase is used for instance, just skip that section and move to [Firebase platform](https://github.com/mailfire/ios-sdk/blob/master/Documentation/Usage.md#firebase-platform)
+Warning: Use that method if no other third party or native lib do not invoke method to prompt for push permissions.
+If Firebase is used for instance, just skip that section.
 ```
 
 ```swift
