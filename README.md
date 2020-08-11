@@ -44,7 +44,7 @@ If you prefer integrate manually:
 SDK for iOS is now ready for use in your Xcode project. Now that you have your project configured to work with Mailfire SDK
 
 
-## Credentials
+# Credentials
 For using Mailfire platform you must provide credentials of your account and current app.
 You can find them at admin panel or request them from your account manager.
 Example:
@@ -63,6 +63,19 @@ didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: An
    Mailfire.initializeWithLaunchOptions(launchOptions, appId: 'YOUR_APP_ID', clientId: 'YOUR_CLIENT_ID',  appCode: 'YOUR_APP_CODE')
 }
 ```
+
+# Log User
+The data is requred to help to optimize an app experience by making it easy to analyze and scale product and marketing experiments.<br>
+This event also creates a session start.
+
+- *email* - better provide after validation https://github.com/mailfire/php-sdk#check-email
+- *userId* - id on your product
+
+```swift
+Mailfire.logUser(email: "some@gmail.com", id: customID)
+```
+
+
 # Push Notifications
 
 ## iOS Push Prompting
@@ -97,11 +110,6 @@ func application(_ application: UIApplication, didRegisterForRemoteNotifications
 
 ```
 
-## Analytics features
-
-Mailfire's analytics features require [Notification Service Extension](https://github.com/mailfire/ios-sdk/blob/master/Documentation/Usage.md#notification-service-extension), [Push tracking]("https://github.com/mailfire/ios-sdk/blob/master/Documentation/Usage.md#push-tracking"), [Unseen push tracking]("https://github.com/mailfire/ios-sdk/blob/master/Documentation/Usage.md#unseen-push-tracking"), [Log user(optional)](#"https://github.com/mailfire/ios-sdk/blob/master/Documentation/Usage.md#log-user")
-
-
 ## Firebase Platform
 
 Pass a Firebase registration token to Mailfire beckend by using
@@ -119,7 +127,7 @@ Pass an APSN registration token to Mailfire beckend by using
 Mailfire.shared.pushToken(.apns(token))
 ```
 
-## Notification Service Extension
+## Rich Push
 
 The Mailfire allows your iOS application to receive rich notifications with images, and badges. It's also required for Mailfire's analytics features.
 
@@ -182,15 +190,11 @@ extension PushNotificationHelper : UNUserNotificationCenterDelegate {
 
 ```
 
-
 ## Unseen push tracking
-
-It's required for Mailfire's analytics features.
 If there is any impl of UNUserNotificationCenterDelegate.userNotificationCenter(\_:willPresent:withCompletionHandler:) and a push notification won't be shown as an app in foreground then use the method inside the callback to notify about the push notification being recieved but unseen.
 
 ```swift
 extension PushNotificationService : UNUserNotificationCenterDelegate {
-
     // foreground
     func userNotificationCenter(_ center: UNUserNotificationCenter,
                                 willPresent notification: UNNotification,
@@ -198,23 +202,11 @@ extension PushNotificationService : UNUserNotificationCenterDelegate {
         ....
         // log push info code if push won't be shown
         ApproverEngine.shared.logUnseenPush(pushPayload: notification.request.content.userInfo)
-
         completionHandler([])
     }
-
 ```
 
-## Log user
-
-Log a user's email and unique id if any.
-The data is requred to help to optimize an app experience
-by making it easy to analyze and scale product and marketing experiments
-
-```swift
-Mailfire.logUser(email: "some@gmail.com", id: customID)
-```
-
-## Subscription
+## Unsubscribe
 
 The user must first subscribe through the native prompt or app settings. It does not officially subscribe or unsubscribe them from the app settings, it unsubscribes them from receiving push from Mailfire.
 You can only call this method with false to opt out users from receiving notifications through Mailfire. You can pass true later to opt users back into notifications.
