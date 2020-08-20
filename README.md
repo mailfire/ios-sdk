@@ -13,6 +13,7 @@ Email Marketing and Push platform for your key product metrics https://mailfire.
   - [Click tracking](#click-tracking)
   - [Unseen tracking](#unseen-tracking)
   - [Unsubscribe in app](#unsubscribe)
+  - [Push Notification Payload](#push-notification-payload)
 
 # Introduction
 Use the Mailfire SDK to design and send push notifications, track and report events occurred in your application.
@@ -212,3 +213,34 @@ You can only call this method with false to opt out users from receiving notific
 ```swift
 Mailfire.subscription = false
 ```
+
+## Push Notification Payload
+Payload Key Reference.
+Table lists the keys that payload may include.
+
+|Key                  |Value type    |  Description     |
+|---------------------|:------------:| -----------------
+|data                 |Dictionary    | Data messages have only custom key-value pairs with no reserved key names
+|notification         |Dictionary    | Have a predefined set of user-visible keys and an optional data payload of custom key-value pairs.
+
+Table lists the keys that you may receive in the data Dictionary.
+
+|Key                  | Value type   |     Description  |
+|---------------------|:------------:| -----------------
+|push_id              |String        |  Sender id information
+|type                 |String        |  Might be any. For instance 'route'
+|route                |String        |  null|chat|profile|correspondence|dialogs|search|me|credits|welcome-package|activity
+|from_user_id         |String        |  For route type only. chat|profile|correspondence, otherwise is null
+|image_url            |String        |  The name of the launch image file to display.
+|sender_id            |String        |  It is platform specific option. For iOS by default is 2.
+|logic_id             |String        |  Logic identifier
+|template_id          |String        |  Template's name
+|mf_split_group       |String        |  Split group name. By default is nil.
+
+Table lists the keys that you may receive in the notification Dictionary.
+
+|Key                  | Value type   |     Description  |
+|---------------------|:------------:| -----------------
+|title                | String       |   The title of the notification.
+|body                 | String       |   Additional information that explains the purpose of the notification.
+|badge                | Number       |   The number to display in a badge on your app’s icon.
