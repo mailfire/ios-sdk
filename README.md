@@ -144,6 +144,12 @@ class NotificationService: UNNotificationServiceExtension {
     var receivedRequest: UNNotificationRequest!
 
     override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
+
+        let APP_ID : String = "XXXXX"
+        let APP_CLIENT_ID : String = "XXXXX"
+        let APP_CODE: String = "XXXXXXXXXXXXXXXXXX"
+        Mailfire.initialize(appId: APP_ID, clientId: APP_CLIENT_ID, clientToken: APP_CODE)
+
         self.receivedRequest = request
         self.contentHandler = contentHandler
         bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
