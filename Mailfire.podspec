@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name              = 'Mailfire'
-s.version           = '1.2.0'
+s.version           = '1.2.1'
 s.summary           = 'Use the Mailfire SDK to track and report events occured in your application.'
 s.homepage          = 'https://api.mailfire.io'
 
@@ -8,7 +8,7 @@ s.author            = { 'Oleksandr Liashko' => 'oleksandr.liashko@corp.mailfire.
 s.license           = { :type => 'Apache-2.0', :file => 'LICENSE' }
 
 s.platform          = :ios
-s.source            = { :git => 'https://github.com/mailfire/ios-sdk.git', :tag => 'v1.2.0' }
+s.source            = { :git => 'https://github.com/mailfire/ios-sdk.git', :tag => 'v1.2.1' }
 
 s.ios.deployment_target = '10.0'
 s.ios.vendored_frameworks = 'Mailfire.framework'
