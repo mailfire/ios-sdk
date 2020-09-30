@@ -228,7 +228,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 /// \code
 /// func application(_ application: UIApplication,
 /// didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-///    // Replace 'YOUR_APP_ID' with your Mailfire App ID.
 ///    Mailfire.initializeWithLaunchOptions(launchOptions, appId: 'YOUR_APP_ID', clientId: 'YOUR_CLIENT_ID',  clientToken: 'YOUR_APP_CODE')
 /// }
 ///
@@ -508,7 +507,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 /// \code
 /// func application(_ application: UIApplication,
 /// didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-///    // Replace 'YOUR_APP_ID' with your Mailfire App ID.
 ///    Mailfire.initializeWithLaunchOptions(launchOptions, appId: 'YOUR_APP_ID', clientId: 'YOUR_CLIENT_ID',  clientToken: 'YOUR_APP_CODE')
 /// }
 ///

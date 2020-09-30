@@ -46,6 +46,7 @@ public enum NotificationDisplayType {
   @objc override dynamic public init()
 }
 extension Mailfire {
+  public static func initialize(appId: Swift.String, clientId: Swift.String, clientToken: Swift.String)
   public static func didReceiveNotificationExtensionRequest(_ request: UserNotifications.UNNotificationRequest, with content: UserNotifications.UNMutableNotificationContent)
   public static func serviceExtensionTimeWillExpire(_ request: UserNotifications.UNNotificationRequest, with content: UserNotifications.UNMutableNotificationContent)
 }

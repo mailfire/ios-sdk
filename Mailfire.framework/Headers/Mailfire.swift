@@ -35,7 +35,6 @@ import UserNotifications
  ```
  func application(_ application: UIApplication,
  didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // Replace 'YOUR_APP_ID' with your Mailfire App ID.
     Mailfire.initializeWithLaunchOptions(launchOptions, appId: 'YOUR_APP_ID', clientId: 'YOUR_CLIENT_ID',  clientToken: 'YOUR_APP_CODE')
  }
  ```
@@ -180,6 +179,35 @@ public final class Mailfire : NSObject {
 } // class Mailfire
 
 public extension Mailfire {
+    
+    /**
+        Ensure that you have provided the appId, clientId, clientToken before using the Mailfire SDK.
+        Set them in your push notification extension app delegate
+     
+        - Warning: The method is only for invoking from push notificaiton extension
+     
+        Initialize the mandatory Mailfire SDK Credentials notably App Id
+     
+        - Parameters:
+            - appId: Mailfire SDK App Id obtained from developer portal at https://api.mailfire.io
+            - clientId: Mailfire SDK Client Id obtained from developer portal at https://api.mailfire.io
+            - clientToken: Mailfire SDK App Key obtained from developer portal at https://api.mailfire.io
+     
+        ```
+        override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
+            Mailfire.initialize(appId: 'YOUR_APP_ID', clientId: 'YOUR_CLIENT_ID',  clientToken: 'YOUR_APP_CODE')
+            ...
+        }
+        ```
+     */
+    static func initialize(appId: String, clientId : String, clientToken: String) {
+        ApproverEngine.shared.initialize(appId: appId,
+                                         clientId: clientId,
+                                         clientToken: clientToken)
+        
+        
+    }
+
     
     /**
      Parses an APS push payload
