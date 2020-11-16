@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name              = 'Mailfire'
-s.version           = '1.2.3'
+s.version           = '1.2.4'
 s.summary           = 'Use the Mailfire SDK to track and report events occured in your application.'
 s.homepage          = 'https://api.mailfire.io'
 
