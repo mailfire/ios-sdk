@@ -1,0 +1,11 @@
+framework module Mailfire {
+  umbrella header "Mailfire.h"
+
+  export *
+  module * { export * }
+}
+
+module Mailfire.Swift {
+    header "Mailfire-Swift.h"
+    requires objc
+}
