@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Mailfire-Swift.h</key>
 		<data>
-		E+H+KCilCA4gYvqEIz72aqrXZ2Y=
+		cuwA4E8iFrPKkS5Fso/wGBJpegU=
 		</data>
 		<key>Headers/Mailfire.h</key>
 		<data>
@@ -26,71 +26,71 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Yjo5+L0VTHVxKYfcrSP9TBX/wxY=
+		Wre2u7nyOuSpmbl73xmkqGuweQ8=
 		</data>
 		<key>Modules/Mailfire.swiftmodule/Project/i386-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		aD37OsfQbCW5KbxPNvKTL4u6NJw=
+		AWgsiKqzgBaKSf94NPZTG+CKeXY=
 		</data>
 		<key>Modules/Mailfire.swiftmodule/Project/i386.swiftsourceinfo</key>
 		<data>
-		aD37OsfQbCW5KbxPNvKTL4u6NJw=
+		AWgsiKqzgBaKSf94NPZTG+CKeXY=
 		</data>
 		<key>Modules/Mailfire.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		rcYL76sum2qzS0HZ6cCK1BzI0vY=
+		r+9shjoVhVyV662BkJjmkXWYWDg=
 		</data>
 		<key>Modules/Mailfire.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		rcYL76sum2qzS0HZ6cCK1BzI0vY=
+		r+9shjoVhVyV662BkJjmkXWYWDg=
 		</data>
 		<key>Modules/Mailfire.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
-		2Ja4UpHhyWxSQHYHvYQ3gyAHjRA=
+		CoAoK7qxwPfcVe/iAtXuQGmYR/s=
 		</data>
 		<key>Modules/Mailfire.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		LunwxUfE5fnxIWK7bMEOW9xgDNs=
+		/SbYDXQND3r96KCSm5ZkVhkblaU=
 		</data>
 		<key>Modules/Mailfire.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		shaECGJV3/o73p5XgGD2KKdfK4E=
+		3ww8NbZMoPGd2Ey5KBZE9tq7qjo=
 		</data>
 		<key>Modules/Mailfire.swiftmodule/i386.swiftdoc</key>
 		<data>
-		2Ja4UpHhyWxSQHYHvYQ3gyAHjRA=
+		CoAoK7qxwPfcVe/iAtXuQGmYR/s=
 		</data>
 		<key>Modules/Mailfire.swiftmodule/i386.swiftinterface</key>
 		<data>
-		LunwxUfE5fnxIWK7bMEOW9xgDNs=
+		/SbYDXQND3r96KCSm5ZkVhkblaU=
 		</data>
 		<key>Modules/Mailfire.swiftmodule/i386.swiftmodule</key>
 		<data>
-		shaECGJV3/o73p5XgGD2KKdfK4E=
+		3ww8NbZMoPGd2Ey5KBZE9tq7qjo=
 		</data>
 		<key>Modules/Mailfire.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		wJAcxsAoT9C5UJQOWSYLSmdtJAc=
+		XMO/dw0GuzcIGmIsgNz6wtu+Tpg=
 		</data>
 		<key>Modules/Mailfire.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		l+Co8aDGsr4Z/KrIAKMkSmQA3M8=
+		O8jpJfOmILgNuH3t9OnoBmVBCOs=
 		</data>
 		<key>Modules/Mailfire.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0Hl+69nznUTD0A7JQ+D2w46N5yY=
+		ASOjPqzVJhLEMlv6koFf4QDHepc=
 		</data>
 		<key>Modules/Mailfire.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		wJAcxsAoT9C5UJQOWSYLSmdtJAc=
+		XMO/dw0GuzcIGmIsgNz6wtu+Tpg=
 		</data>
 		<key>Modules/Mailfire.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		l+Co8aDGsr4Z/KrIAKMkSmQA3M8=
+		O8jpJfOmILgNuH3t9OnoBmVBCOs=
 		</data>
 		<key>Modules/Mailfire.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		0Hl+69nznUTD0A7JQ+D2w46N5yY=
+		ASOjPqzVJhLEMlv6koFf4QDHepc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -103,11 +103,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			E+H+KCilCA4gYvqEIz72aqrXZ2Y=
+			cuwA4E8iFrPKkS5Fso/wGBJpegU=
 			</data>
 			<key>hash2</key>
 			<data>
-			XluYzUo6TMyEauTIVzltjK3abj2YHBlgRJm/48wFq8g=
+			QCkKwyYWoNPw5/wMxhxm4chUBLz0iGs5pFd4jdh9Z1w=
 			</data>
 		</dict>
 		<key>Headers/Mailfire.h</key>
@@ -158,176 +158,176 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aD37OsfQbCW5KbxPNvKTL4u6NJw=
+			AWgsiKqzgBaKSf94NPZTG+CKeXY=
 			</data>
 			<key>hash2</key>
 			<data>
-			BIvNdfCZfprmvh9jFKfH7z0IaeNcs20m5xqLRb+l7MM=
+			HKm2Uzf7KBdupO80zGagzIyHIWWNKzcTpCASDuJIH0U=
 			</data>
 		</dict>
 		<key>Modules/Mailfire.swiftmodule/Project/i386.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aD37OsfQbCW5KbxPNvKTL4u6NJw=
+			AWgsiKqzgBaKSf94NPZTG+CKeXY=
 			</data>
 			<key>hash2</key>
 			<data>
-			BIvNdfCZfprmvh9jFKfH7z0IaeNcs20m5xqLRb+l7MM=
+			HKm2Uzf7KBdupO80zGagzIyHIWWNKzcTpCASDuJIH0U=
 			</data>
 		</dict>
 		<key>Modules/Mailfire.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rcYL76sum2qzS0HZ6cCK1BzI0vY=
+			r+9shjoVhVyV662BkJjmkXWYWDg=
 			</data>
 			<key>hash2</key>
 			<data>
-			fy5FXPLOGfh/dFVG5uVHiZMivaU82H8LOvqHTHqy+NE=
+			NIC02H/2zhAK9GdIAQc8SRWXeMgMrz3B1MGjyyWbHrU=
 			</data>
 		</dict>
 		<key>Modules/Mailfire.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rcYL76sum2qzS0HZ6cCK1BzI0vY=
+			r+9shjoVhVyV662BkJjmkXWYWDg=
 			</data>
 			<key>hash2</key>
 			<data>
-			fy5FXPLOGfh/dFVG5uVHiZMivaU82H8LOvqHTHqy+NE=
+			NIC02H/2zhAK9GdIAQc8SRWXeMgMrz3B1MGjyyWbHrU=
 			</data>
 		</dict>
 		<key>Modules/Mailfire.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2Ja4UpHhyWxSQHYHvYQ3gyAHjRA=
+			CoAoK7qxwPfcVe/iAtXuQGmYR/s=
 			</data>
 			<key>hash2</key>
 			<data>
-			KrZ1IjVrUcYTO03xXTLi3kO/s1ayrk80CCR4IAJREOU=
+			84Cy9qg7NnPaf6NrW6E8/DasoKy78LTCPdN18bvSLnM=
 			</data>
 		</dict>
 		<key>Modules/Mailfire.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LunwxUfE5fnxIWK7bMEOW9xgDNs=
+			/SbYDXQND3r96KCSm5ZkVhkblaU=
 			</data>
 			<key>hash2</key>
 			<data>
-			QGgDIaqlXeZ5OqGhpfUKlXzlCbr0t/RknP/GESP09vs=
+			MEpQgs/SjeV6UXOKBkvhnWO0V7fgJbC50IWFz0tLSxg=
 			</data>
 		</dict>
 		<key>Modules/Mailfire.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			shaECGJV3/o73p5XgGD2KKdfK4E=
+			3ww8NbZMoPGd2Ey5KBZE9tq7qjo=
 			</data>
 			<key>hash2</key>
 			<data>
-			nJAdVgZhboUQIZb0YpRhVGJkax3A4c9gWH9hkQ1lP8c=
+			ooqK7nhRCXLCkOcOz15nmDweI24sYWznzsv9hcy9VXo=
 			</data>
 		</dict>
 		<key>Modules/Mailfire.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2Ja4UpHhyWxSQHYHvYQ3gyAHjRA=
+			CoAoK7qxwPfcVe/iAtXuQGmYR/s=
 			</data>
 			<key>hash2</key>
 			<data>
-			KrZ1IjVrUcYTO03xXTLi3kO/s1ayrk80CCR4IAJREOU=
+			84Cy9qg7NnPaf6NrW6E8/DasoKy78LTCPdN18bvSLnM=
 			</data>
 		</dict>
 		<key>Modules/Mailfire.swiftmodule/i386.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LunwxUfE5fnxIWK7bMEOW9xgDNs=
+			/SbYDXQND3r96KCSm5ZkVhkblaU=
 			</data>
 			<key>hash2</key>
 			<data>
-			QGgDIaqlXeZ5OqGhpfUKlXzlCbr0t/RknP/GESP09vs=
+			MEpQgs/SjeV6UXOKBkvhnWO0V7fgJbC50IWFz0tLSxg=
 			</data>
 		</dict>
 		<key>Modules/Mailfire.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			shaECGJV3/o73p5XgGD2KKdfK4E=
+			3ww8NbZMoPGd2Ey5KBZE9tq7qjo=
 			</data>
 			<key>hash2</key>
 			<data>
-			nJAdVgZhboUQIZb0YpRhVGJkax3A4c9gWH9hkQ1lP8c=
+			ooqK7nhRCXLCkOcOz15nmDweI24sYWznzsv9hcy9VXo=
 			</data>
 		</dict>
 		<key>Modules/Mailfire.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wJAcxsAoT9C5UJQOWSYLSmdtJAc=
+			XMO/dw0GuzcIGmIsgNz6wtu+Tpg=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZK140gcNf+ffoG/Okg/u97tcWPGXXi0dhXim0SpCMKU=
+			9GbbvMG0Xpu1P9pFW+mmF2OPNaSJ46ACL0Bkbppqjmk=
 			</data>
 		</dict>
 		<key>Modules/Mailfire.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			l+Co8aDGsr4Z/KrIAKMkSmQA3M8=
+			O8jpJfOmILgNuH3t9OnoBmVBCOs=
 			</data>
 			<key>hash2</key>
 			<data>
-			GNOsbOezdLgkogE6EYTie5jqbXfzkCZGliF5hFUIKSI=
+			2JbEn0q+tWEYVKfAOODym1/dgYkeFEmNK0f3RjXW4lY=
 			</data>
 		</dict>
 		<key>Modules/Mailfire.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0Hl+69nznUTD0A7JQ+D2w46N5yY=
+			ASOjPqzVJhLEMlv6koFf4QDHepc=
 			</data>
 			<key>hash2</key>
 			<data>
-			cdBy8nEM7EXxz+dofD+Roa1JFa2kMiW+9hwQyLEpc4Q=
+			g1QOQ1cWwwRPTi619rMI2ec+bZBtFhMkCzZQ2AZSifg=
 			</data>
 		</dict>
 		<key>Modules/Mailfire.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wJAcxsAoT9C5UJQOWSYLSmdtJAc=
+			XMO/dw0GuzcIGmIsgNz6wtu+Tpg=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZK140gcNf+ffoG/Okg/u97tcWPGXXi0dhXim0SpCMKU=
+			9GbbvMG0Xpu1P9pFW+mmF2OPNaSJ46ACL0Bkbppqjmk=
 			</data>
 		</dict>
 		<key>Modules/Mailfire.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			l+Co8aDGsr4Z/KrIAKMkSmQA3M8=
+			O8jpJfOmILgNuH3t9OnoBmVBCOs=
 			</data>
 			<key>hash2</key>
 			<data>
-			GNOsbOezdLgkogE6EYTie5jqbXfzkCZGliF5hFUIKSI=
+			2JbEn0q+tWEYVKfAOODym1/dgYkeFEmNK0f3RjXW4lY=
 			</data>
 		</dict>
 		<key>Modules/Mailfire.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0Hl+69nznUTD0A7JQ+D2w46N5yY=
+			ASOjPqzVJhLEMlv6koFf4QDHepc=
 			</data>
 			<key>hash2</key>
 			<data>
-			cdBy8nEM7EXxz+dofD+Roa1JFa2kMiW+9hwQyLEpc4Q=
+			g1QOQ1cWwwRPTi619rMI2ec+bZBtFhMkCzZQ2AZSifg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

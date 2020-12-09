@@ -4,11 +4,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "MailfirePakcage",
+    name: "MailfirePackage",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "MailfirePakcage",
+            name: "MailfirePackage",
             targets: ["Mailfire"]),
     ],
     dependencies: [
